@@ -1,0 +1,140 @@
+\documentclass{article}
+
+\usepackage{lipsum}
+\usepackage[margin=1in,left=1.5in,includefoot]{geometry}
+
+\usepackage{hyperref}
+
+%Graphics premable
+\usepackage{graphicx}
+\usepackage{float}
+
+%header nd footer 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+
+%
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+	\line(1,0){300}\\
+	[0.25in]
+	\huge{\bfseries e-Yantra Ideas Competition 2019-20}\\
+	[2mm]
+	\line(1,0){200}\\
+	[1.0cm]
+	\textsc{\LARGE Diabetic Retinopathy using Python with Machine Learning}\\
+	[0.75cm]
+	\textsc{\Large Team ID:1172}\\
+	\end{center}
+\end{titlepage}
+
+\section{Introduction/Motivation:}\label{sec:intro}
+
+Diabetic Retinopathy is the ruling disease-causing sightlessness across all over the world the leading countries are India and the United States of America. It's rapidly increasing disease to diabetic patients. It’s caused by damage to the blood vessels of the light-sensitive tissue at the rear of the eye. This Diabetic Retinopathy should be detected accurately and at the right time otherwise; it takes to the visionless world. Due to the unbalance diet diabetic plays a major role. If detected early enough, there are chances for productive treatment of it. The Specialist identifies by leaking blood vessels in the retina, but it takes a large amount of time to completely detect the DR and its cause to be late.
+\\
+\\
+ Using the concept of Machine learning we can obtain rapidly result and classify between the two-class classification of Diabetic Retinopathy and Non-Diabetic Retinopathy. Currently, detecting DR is a long and manual process that needs the trained clinician to identify the DR. therefore, we develop an automatic trained model that predicts accurately using Convolution Neural Network(CNN) and giving the strength to cure clinicians in real-time.
+\\
+
+\section{Market Research / Literature Survey:}
+
+In recent years most of the image processing researchers worked a lot on segmenting of the blood veins in the retina using the concepts of ANN to detect the disease at an early stage in their research paper [1]. This paper was considered as the base paper from which the motivation was obtained to do research in this exciting field of biomedical engineering. The authors used the supervisory methods for detection purposes and finally they arrived at a conclusion that using ANN they could get very good results and the training of the NNs along with the algorithm was used to detect the DR at an early stage in the human beings, but they worked on only for a limited amount of images taken from the standard database.
+
+\section{Hardware requirements:}
+\begin {itemize}
+	\item Processor:  Intel i5 @2.30GHz
+	\item RAM: 8GB RAM
+	\item High End GPU
+\end{itemize}
+
+
+\section{Software requirements:}
+\begin{itemize}
+	\item Python 3.7.4
+	\item IDE: Anaconda
+	\item Web browser: Google Chrome
+\end{itemize}
+
+
+\section{Implementation:}
+Most of the image processing researchers in recent years Particularly involved in the development of machine learning In-depth learning approaches to hand-written numerology Recognition MNIST dataset and image classification by IMAGENET. 
+\\
+\\
+Our proposed methodology has emerged strongly Based on these important aspects of disease severity classification From Fundus Pictures. 
+\\
+\\
+In particular, the classification of diseases in particular Specific architecture followed by a DCNN. Basic steps for achieving maximum accuracy from images Dataset i) Data augmentation ii) Pre-processing iii) Launch of networks iv) Training v) Activation activity Choices vi) Regularizations vii) Synchronize multiple Methods. In our proposed diabetic retinopathy classification model shown in Flow chart diagram. The blocks are-
+
+\begin{itemize}
+	\item Data augmentation 
+	\item Pre-processing 
+	\item Deep convolutional neural network classification
+\end{itemize}
+
+\begin{enumerate}
+	\item DATA AUGMENTATION
+	\begin{itemize}
+		\item The fundus images are obtained from completely different the various data sets that are taken under different cameras with variable fields of reading, non-clarity, blurring, contrast, and sizes of pictures totally different. Within the data augmentation, contrast adjustment, flipping pictures, brightness adjustments are created. 
+	\end{itemize}
+
+
+
+	\item PREPROCESSING 
+	\begin{itemize}
+		\item For a Deep Convolutional neural network worked on spatial data of the fundus images. A primary step involved in the pre-processing is resizing the pictures. Before feeding into the design for classification, convert the images into Grayscale. And then, convert into the L model. It’s a monochrome image that's used to highlight the microaneurysms, and vessels within the fundus pictures. And flatten the pictures in single-dimensional for process more.
+	\end{itemize}
+
+
+
+	\item CNN Classification
+	\begin{itemize}
+		\item In Image processing, the feed-forward artificial neural network in which Convolutional Neural Network (CNN) is a type of it. In which the connectivity pattern between its neurons is inspired by the organization of the animal visual cortex, whose individual neurons are arranged in such a way that responds to overlapping regions tiling the visual field. In deep learning, [2][3] the convolutional neural network uses a complex architecture composed of stacked layers in which is particularly well-adapted to classify the images. Deep Convolutional Neural Network architecture (DCNN) having certain common layers are 
+		i)	Convolutional Layer 
+		ii)	Pooling Layer 
+		iii)	ReLU Layer 
+		iv)	Dropout layer 
+		v)	Fully Connected Layer
+		vi)	Classification Layer
+		
+	\end{itemize}
+\end{enumerate}
+
+
+\section{Flow Chart:}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4in]{flowchart.png}
+	\caption{Flow chart}
+	\label{image_1}
+\end{figure}
+
+\section{Feasibility:}
+In an existing system, Drops placed in our eyes widen (dilate) our pupils to allow your doctor to better view inside our eyes. The drops may cause our close vision to blur until they wear off, several hours later.
+\\
+\\
+Throughout the examination doctor can look for-abnormal blood vessels, swelling and blood within the tissue layer, growth of new blood vessels and connective tissue, abnormalities in your optic nerve.
+\\
+\\
+To overcome the above manual process we are developing an AI system which will detect vision defect in human eyes using Deep Convolutional Neural Network (DCNN). It offers high accuracy in the classification of these diseases through spatial analysis.
+
+\section{References:}
+\begin{enumerate}
+	\item Kulwinder S. Mann, Sukhpreet Kaur, “Segmentation of retinal blood vessels using artificial neural networks for early detection of diabetic retinopathy”, Published by American Inst. of Physics, Proc. of the AIP Conf., Vol. 1836, Issue 1, Article id020026, Jun. 2017
+	
+	\item G.Lim, M.L.Lee, W.hsu, “Transformed Representations for Convolutional Neural Networks in Diabetic Retinopathy Screening”, Modern Artificial Intelligence for Health Analytic Papers from the AAAI(2014)
+	
+	\item P Kulkarni, J Zepeda, F Jurie, P Perez, L Chevallier, “Hybrid Multi-layer Deep CNN/Aggregator feature for Image Classification”, Computer Vision and pattern recognition,ICASSP conference, (2015)
+	
+	\item T Chandrakumar , R Kathirvel ,” Classifying Diabetic Retinopathy using Deep Learning Architecture”, International Journal of Engineering Research and  Technology , Vol. 5, Issue 06, June-2016,pp.21-23
+	
+	\item \href{Link}{https://www.mayoclinic.org/diseases-conditions/diabetic-retinopathy/symptoms-causes/syc-20371611}[15th August 2019]
+	
+	\item \href{Link}{http://neuralnetworksanddeeplearning.com/chap6.html}[28th September 2019]
+\end{enumerate}
+
+\end{document}
